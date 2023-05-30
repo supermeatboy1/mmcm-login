@@ -1,0 +1,249 @@
+/*
+          _______  _        _        _______            _________ _______ __________________ _______  _______ 
+|\     /|(  ____ \( \      ( \      (  ___  )  |\     /|\__   __/(  ____ \\__   __/\__   __/(  ___  )(  ____ )
+| )   ( || (    \/| (      | (      | (   ) |  | )   ( |   ) (   | (    \/   ) (      ) (   | (   ) || (    )|
+| (___) || (__    | |      | |      | |   | |  | |   | |   | |   | (_____    | |      | |   | |   | || (____)|
+|  ___  ||  __)   | |      | |      | |   | |  ( (   ) )   | |   (_____  )   | |      | |   | |   | ||     __)
+| (   ) || (      | |      | |      | |   | |   \ \_/ /    | |         ) |   | |      | |   | |   | || (\ (   
+| )   ( || (____/\| (____/\| (____/\| (___) |    \   /  ___) (___/\____) |___) (___   | |   | (___) || ) \ \__
+|/     \|(_______/(_______/(_______/(_______)     \_/   \_______/\_______)\_______/   )_(   (_______)|/   \__/
+                                                                                                              
+*/
+
+
+/* MMCM Digital Logo */
+ .imahe {
+     padding-top: 1.0em;
+     padding-bottom: 2.0em;
+     background-repeat: no-repeat;
+     box-shadow: none;
+}
+/* Login Input Forms */
+/* Label */
+ .bb-login .login-form ul label {
+     color: #333;
+}
+ .bb-login .login-form ul label.float-above {
+     color: #333;
+}
+/* Input */
+ .bb-login .login-form ul input[type="text"], .bb-login .login-form ul input[type="password"] {
+     background-color: transparent;
+     border: none;
+     color: #333;
+     border-bottom: 3px solid #000;
+     margin: 1.25rem 0;
+     font-size: .875rem;
+     outline-offset: -0.125rem;
+}
+ .bb-login .login-form .button {
+     margin-top: 3.125rem;
+     margin-bottom: .3125rem;
+     border: 3px solid #333;
+     color: #333;
+     background-color: #f0f0f0;
+     box-shadow: none;
+}
+ .bb-login .login-form .button:hover {
+     background-color: #e2aaaa;
+}
+/* "Sign in with third party account" button */
+ .bb-login .login-form #loginRedirectProviders .button.dropdown {
+     background-color: #f0f0f0;
+     box-shadow: none;
+     color: #333333;
+     font-family: "Open Sans";
+     font-size: .875rem;
+     margin-bottom: .375rem;
+     margin-top: .9375rem;
+     padding: .4375rem .625rem;
+     text-align: left;
+}
+ .bb-login .login-form #loginRedirectProviders .button.dropdown:hover {
+     background-color: #e2aaaa;
+}
+ .bb-login .login-form #loginRedirectProviderList.open {
+     display: block;
+     border: 3px solid #333;
+     background-color: #e2e2e2;
+}
+ .bb-login #ultraCourseCatalogLink a {
+     font-size: .75rem;
+     color: #333;
+     text-decoration: underline;
+}
+ .bb-login #ultraCourseCatalogLink a:hover {
+     color: #e29a9a;
+}
+ .legal {
+     color: #333;
+}
+ .bb-login .login-form-footer a {
+     color: black;
+}
+ .bb-login .login-form-footer a:hover {
+     color: #e29a9a;
+}
+ .bb-login #gatewayButtons a {
+     color: #333;
+     font-size: .75rem;
+     text-decoration: underline;
+     margin: .125rem;
+}
+ .bb-login #gatewayButtons a:hover {
+     color: #e29a9a;
+}
+ .bb-login .login-form #loginRedirectProviderList li a {
+     color: #333;
+     display: block;
+     padding: .5rem .625rem;
+}
+ .bb-login .login-form #loginRedirectProviderList {
+     background-color: #efefef;
+     border-radius: .125rem;
+     box-shadow: 0 0 0 .25rem rgba(0,0,0,.05);
+     display: none;
+     left: .9375rem;
+     position: absolute;
+     text-align: left;
+     z-index: 10;
+     width: -webkit-calc(100% - 1.875rem);
+}
+ .bb-login .login-form #loginRedirectProviderList li .defaultProviderIcon {
+     background-image: url("/ui-ultra/images/default-provider-icon.svg");
+     filter: invert();
+}
+ .bb-login .login-form #loginRedirectProviderList li .defaultProviderIcon:hover {
+     filter: none;
+}
+ .bb-login .login-form #loginRedirectProviderList li a:hover, .bb-login .login-form #loginRedirectProviderList li a:focus {
+     background-color: #e29a9a;
+}
+/* Announcements */
+ .bb-login .login-page-announcements #loginAnnouncements > ul > li {
+     background-color: #f0f0f0;
+     color: #333;
+     filter: drop-shadow(0.55em 0.55em 0.5em #554444);
+}
+/* Media Queries */
+/* ================================================================================================= */
+/* Portrait Orientation (Mobile Phones) */
+/* ================================================================================================= */
+ @media only screen and (min-width: 0) {
+     .bb-login {
+         width: 100%;
+         overflow: auto;
+         position: relative;
+         height: auto;
+         background-color: #efefef;
+    }
+     .bb-login:before {
+         background-image: url("https://raw.githubusercontent.com/supermeatboy1/mmcm-login/main/garden-img.png");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: scroll;
+         background-position: center center;
+         position: absolute;
+         content: "";
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         z-index: -1;
+    }
+     .bb-login #login-block {
+         background-color: #f0f0f0;
+         box-shadow: 0.55em 0.55em #554444;
+         margin-top: 1.5em;
+         border-radius: 1.2em;
+         padding-top: 2.0em;
+         padding-right: 2.0em;
+         padding-left: 2.0em;
+         padding-bottom: 3.0em;
+         min-width: 15rem;
+         max-width: 33rem;
+    }
+     .login-page-announcements {
+         width: 91%;
+         max-width: 91%;
+    }
+     .bb-login .login-page-announcements #loginAnnouncements {
+         max-width: 100%;
+         margin-left: 10%;
+         margin-right: auto;
+    }
+     .bb-login .login-page-announcements #loginAnnouncements>ul>li {
+         border-radius: 1.0em;
+    }
+     .bb-login .login-page-announcements #loginAnnouncements>ul>li .vtbegenerated {
+         max-height: 7.25cm;
+    }
+}
+/* ================================================================================================= */
+/* Landscape Orientation (Desktops and PCs) */
+/* ================================================================================================= */
+ @media only screen and (min-aspect-ratio: 4/3) and (orientation: landscape) {
+     .bb-login #login-block {
+         float: right;
+         min-width: 38.5%;
+         max-width: 38.5%;
+         background: none;
+         box-shadow: none;
+         padding: 0.14cm 1.0cm 1.0cm 1.0cm;
+    }
+     .bb-login #login-form {
+         background: none;
+         filter: none;
+    }
+     .login-page-announcements {
+         float: left;
+         width: 40.5%;
+         padding-bottom: 1.5cm;
+    }
+     .bb-login {
+         width: 100%;
+         overflow: auto;
+         position: relative;
+         height: auto;
+    }
+     .bb-login:before {
+         background-image: url("https://raw.githubusercontent.com/supermeatboy1/mmcm-login/main/garden-img.png");
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: scroll;
+         background-position: center center;
+         clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
+         position: absolute;
+         content: "";
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         z-index: -1;
+    }
+     .bb-login #copyright {
+         margin-top: 0;
+    }
+     .bb-login .login-page-announcements #loginAnnouncements>ul>li .vtbegenerated {
+         max-height: 6.5cm;
+    }
+     .row {
+         max-width: 90%;
+    }
+     .bb-login .login-page-announcements #loginAnnouncements>ul>li {
+         padding: 0 1.0rem 1.0rem 1.0rem;
+         border-radius: 1.0em;
+    }
+     .bb-login .login-page-announcements #loginAnnouncements > ul > li .announcementDate {
+         padding: 1.0rem 0 0 0;
+    }
+     .bb-login #ultraCourseCatalogLink {
+         margin-top: 1rem;
+    }
+     .bb-login #copyright {
+         margin-top: 1rem;
+    }
+     .catalog-and-copyright-info {
+         padding-top: 0.2cm;
+    }
+}
